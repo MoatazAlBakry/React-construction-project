@@ -1,32 +1,37 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
+import './navbar.css';
 
 const Navbar: React.FC = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <nav className="navbar navbar-expand-lg bg-white shadow-sm">
-      <div className="container-fluid d-flex justify-content-between align-items-center py-2">
-        {/* Logo (Left) */}
-        <div className="navbar-brand d-flex align-items-center">
-          <img src="/logo.png" alt="Logo" className="me-2" style={{ height: '40px' }} />
-          <span className="fs-4 fw-bold text-primary">Brand</span>
-        </div>
-
-        {/* Nav Links (Center) */}
-        <ul className="navbar-nav mx-auto mb-2 mb-lg-0 d-flex flex-row gap-3">
-          <li className="nav-item">
-            <Link to="/" className="nav-link text-dark">Home</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/about" className="nav-link text-dark">About</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/contact" className="nav-link text-dark">Contact</Link>
-          </li>
+    <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
+      <div className="navbar-container">
+        <Link to="/" className="logo">DA</Link>
+        <button 
+          className="mobile-menu-btn"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        >
+          ☰
+        </button>
+        <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
+          <li><Link to="/">Main</Link></li>
+          <li><Link to="/gallery">Gallery</Link></li>
+          <li><Link to="/projects">Projects</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
         </ul>
-
-        {/* Empty div for spacing balance or right-side content in the future */}
-        <div className="d-none d-lg-block" style={{ width: '40px' }}></div>
       </div>
     </nav>
   );

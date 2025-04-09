@@ -8,6 +8,7 @@ import MissionStatement from './components/MissionStatement.tsx';
 import Projects from './components/Projects.tsx';
 import ContactForm from './components/ContactForm.tsx';
 import Footer from './components/Footer.tsx';
+import Gallery from './components/Gallery.tsx';
 import './App.css';
 
 const Home: React.FC = () => {
@@ -17,6 +18,7 @@ const Home: React.FC = () => {
       <About />
       <MissionStatement />
       <Projects />
+      <Gallery />
       <ContactForm />
     </div>
   );
@@ -30,6 +32,7 @@ const App: React.FC = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<ContactForm />} />
       </Routes>
       <Footer />
