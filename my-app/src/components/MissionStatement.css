@@ -1,0 +1,33 @@
+.mission-statement {
+  background-color: #fff;
+  padding: 6rem 2rem;
+}
+
+.mission-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mission-column {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.mission-column p {
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .mission-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .mission-statement {
+    padding: 4rem 2rem;
+  }
+} 

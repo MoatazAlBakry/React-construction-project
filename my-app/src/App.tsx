@@ -1,23 +1,40 @@
 // Importing necessary libraries and components
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Navbar from './components/navbar';
+import Navbar from './components/navbar.tsx';
+import Hero from './components/Hero.tsx';
+import About from './components/About.tsx';
+import MissionStatement from './components/MissionStatement.tsx';
+import Projects from './components/Projects.tsx';
+import ContactForm from './components/ContactForm.tsx';
+import Footer from './components/Footer.tsx';
+import './App.css';
 
-const Home = () => <div className="p-4">Welcome to the Home Page</div>;
-const About = () => <div className="p-4">About Us</div>;
-const Contact = () => <div className="p-4">Contact Page</div>;
-
-const App: React.FC = () => {
+const Home: React.FC = () => {
   return (
-    <div>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+    <div className="home">
+      <Hero />
+      <About />
+      <MissionStatement />
+      <Projects />
+      <ContactForm />
     </div>
   );
 };
 
-export default App
+const App: React.FC = () => {
+  return (
+    <div className="app">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<ContactForm />} />
+      </Routes>
+      <Footer />
+    </div>
+  );
+};
+
+export default App;
