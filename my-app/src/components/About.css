@@ -18,8 +18,8 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 6rem;
-  max-width: 1200px;
+  gap: 3rem;
+  max-width: 1800px;
   margin: 0 auto;
   align-items: center;
 }
@@ -31,7 +31,7 @@
   color: #666;
   padding: 2rem;
   background-color: #f9f9f9;
-  border-radius: 4px;
+  border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
@@ -57,15 +57,15 @@
 }
 
 .grid-item:nth-child(1) {
-  background-image: url('/my-app/src/images/about-1.jpg');
+  background-image: url('/images/about/about-1.jpg');
 }
 
 .grid-item:nth-child(2) {
-  background-image: url('/my-app/src/images/about-2.jpg');
+  background-image: url('/images/about/about-2.jpg');
 }
 
 .grid-item:nth-child(3) {
-  background-image: url('/my-app/src/images/about-3.jpg');
+  background-image: url('/images/about/about-3.jpg');
 }
 
 @media (max-width: 1024px) {

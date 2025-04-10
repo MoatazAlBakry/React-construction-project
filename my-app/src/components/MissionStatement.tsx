@@ -8,14 +8,13 @@ const MissionStatement: React.FC = () => {
       <div className="mission-content">
         <div className="mission-column">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, 
-            luctus nec ullamcorper mattis.
+          Whether you're planning a custom home, a commercial build-out, or a large-scale infrastructure project, 
+          we have the expertise and resources to bring your vision to life — on time and within budget.
           </p>
         </div>
         <div className="mission-column">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum 
-            consequat hendrerit lacus, ac molestie orci.
+          Let us turn your ideas into reality. Partner with Project Rebuilt where construction meets craftsmanship.
           </p>
         </div>
       </div>

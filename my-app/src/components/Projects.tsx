@@ -11,20 +11,20 @@ interface Project {
 const projectsData: Project[] = [
   {
     id: 1,
-    title: 'Sample Project',
-    description: 'Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+    title: 'Modern Office Build with Solar Integration – Redline Project',
+    description: 'This sleek, energy-efficient commercial building features a bold red exterior and a clean, modern design. The flat roof is outfitted with high-performance solar panels, providing sustainable power while reducing long-term energy costs. Built with a focus on both aesthetics and functionality, the Redline Project stands as a statement of innovation and eco-conscious construction.',
     image: '/images/projects/project1.jpg'
   },
   {
     id: 2,
-    title: 'Sample Project 2',
-    description: 'Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+    title: 'Blush Harmony Interior – Boutique Room Design',
+    description: 'This elegant interior project showcases a soft, contemporary aesthetic centered around a refined pink palette. Featuring custom furnishings, rose-toned accents, and warm lighting, the space blends comfort with modern sophistication. From velvet textures to gold-trimmed décor, every detail in the Blush Harmony room was thoughtfully curated to create a cozy yet elevated atmosphere — perfect for relaxing or entertaining in style.',
     image: '/images/projects/project2.jpg'
   },
   {
     id: 3,
-    title: 'Sample Project 3',
-    description: 'Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+    title: 'Skyline Tower – Glass-Facade Office Development',
+    description: 'Rising high above the cityscape, Skyline Tower is a striking office development defined by its sleek glass façade and modern architectural lines. Designed to maximize natural light and panoramic views, this high-rise blends cutting-edge engineering with sophisticated urban style. The structure features energy-efficient glazing, advanced climate control systems, and premium finishes throughout — setting a new standard for contemporary workspace environments.',
     image: '/images/projects/project3.jpg'
   }
 ];

@@ -18,7 +18,6 @@ const Home: React.FC = () => {
       <About />
       <MissionStatement />
       <Projects />
-      <Gallery />
       <ContactForm />
     </div>
   );

@@ -8,9 +8,10 @@ const About: React.FC = () => {
       <div className="about-content">
         <div className="about-text">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, 
-            luctus nec ullamcorper mattis, pulvinar dapibus leo. Sed non mauris vitae 
-            erat consequat auctor eu in elit.
+          At Project Rebuilt, we build more than just structures — we build trust, quality, and lasting partnerships. <br /> <br />
+          With over 30 years of experience in the construction industry, our team is dedicated to delivering top-tier residential, commercial, and industrial projects
+           across The world.From initial concept to final completion, we bring precision, integrity, and a strong commitment to excellence to every job site. <br /> <br />
+            Our reputation is built on a foundation of skilled craftsmanship, transparent communication, and a focus on safety and sustainability.
           </p>
         </div>
         <div className="about-images">
