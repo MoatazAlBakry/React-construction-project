@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Projects.css';
 
 interface Project {
@@ -13,19 +14,19 @@ const projectsData: Project[] = [
     id: 1,
     title: 'Modern Office Build with Solar Integration – Redline Project',
     description: 'This sleek, energy-efficient commercial building features a bold red exterior and a clean, modern design. The flat roof is outfitted with high-performance solar panels, providing sustainable power while reducing long-term energy costs. Built with a focus on both aesthetics and functionality, the Redline Project stands as a statement of innovation and eco-conscious construction.',
-    image: '/images/projects/project1.jpg'
+    image: '/React-construction-project/images/projects/project1.jpg'
   },
   {
     id: 2,
     title: 'Blush Harmony Interior – Boutique Room Design',
     description: 'This elegant interior project showcases a soft, contemporary aesthetic centered around a refined pink palette. Featuring custom furnishings, rose-toned accents, and warm lighting, the space blends comfort with modern sophistication. From velvet textures to gold-trimmed décor, every detail in the Blush Harmony room was thoughtfully curated to create a cozy yet elevated atmosphere — perfect for relaxing or entertaining in style.',
-    image: '/images/projects/project2.jpg'
+    image: '/React-construction-project/images/projects/project2.jpg'
   },
   {
     id: 3,
     title: 'Skyline Tower – Glass-Facade Office Development',
     description: 'Rising high above the cityscape, Skyline Tower is a striking office development defined by its sleek glass façade and modern architectural lines. Designed to maximize natural light and panoramic views, this high-rise blends cutting-edge engineering with sophisticated urban style. The structure features energy-efficient glazing, advanced climate control systems, and premium finishes throughout — setting a new standard for contemporary workspace environments.',
-    image: '/images/projects/project3.jpg'
+    image: '/React-construction-project/images/projects/project3.jpg'
   }
 ];
 
@@ -63,7 +64,12 @@ const Projects: React.FC = () => {
             <div className="project-content">
               <h4>{project.title}</h4>
               <p>{project.description}</p>
-              <button className="view-more">VIEW MORE →</button>
+              <Link 
+                to={`/React-construction-project/projects/${project.id}`}
+                className="view-more"
+              >
+                VIEW MORE →
+              </Link>
             </div>
           </div>
         ))}

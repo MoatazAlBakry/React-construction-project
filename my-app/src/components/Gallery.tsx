@@ -10,52 +10,52 @@ interface GalleryImage {
 const galleryImages: GalleryImage[] = [
   {
     id: 1,
-    src: '/images/gallery/lighthouse-1.jpg',
+    src: '/React-construction-project/images/gallery/lighthouse-1.jpg',
     alt: 'Lighthouse at sunset'
   },
   {
     id: 2,
-    src: '/images/gallery/lighthouse-2.jpg',
+    src: '/React-construction-project/images/gallery/lighthouse-2.jpg',
     alt: 'Purple sky lighthouse'
   },
   {
     id: 3,
-    src: '/images/gallery/modern-architecture.jpg',
+    src: '/React-construction-project/images/gallery/modern-architecture.jpg',
     alt: 'Modern glass architecture'
   },
   {
     id: 4,
-    src: '/images/gallery/lighthouse-3.jpg',
+    src: '/React-construction-project/images/gallery/lighthouse-3.jpg',
     alt: 'Blue lighthouse'
   },
   {
     id: 5,
-    src: '/images/gallery/historic-building.jpg',
+    src: '/React-construction-project/images/gallery/historic-building.jpg',
     alt: 'Historic architecture'
   },
   {
     id: 6,
-    src: '/images/gallery/church-interior.jpg',
+    src: '/React-construction-project/images/gallery/church-interior.jpg',
     alt: 'Church interior'
   },
   {
     id: 7,
-    src: '/images/gallery/street-view.jpg',
+    src: '/React-construction-project/images/gallery/street-view.jpg',
     alt: 'Historic street view'
   },
   {
     id: 8,
-    src: '/images/gallery/columns.jpg',
+    src: '/React-construction-project/images/gallery/columns.jpg',
     alt: 'Classical columns'
   },
   {
     id: 9,
-    src: '/images/gallery/venice.jpg',
+    src: '/React-construction-project/images/gallery/venice.jpg',
     alt: 'Venice architecture'
   },
   {
     id: 10,
-    src: '/images/gallery/modern-building.jpg',
+    src: '/React-construction-project/images/gallery/modern-building.jpg',
     alt: 'Modern building perspective'
   }
 ];

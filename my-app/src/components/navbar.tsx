@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
-        <Link to="/" className="logo">PR</Link>
+        <Link to="/React-construction-project" className="logo">PR</Link>
         <button 
           className="mobile-menu-btn"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -26,11 +26,11 @@ const Navbar: React.FC = () => {
           ☰
         </button>
         <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
-          <li><Link to="/">Main</Link></li>
-          <li><Link to="/gallery">Gallery</Link></li>
-          <li><Link to="/projects">Projects</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          <li><Link to="/React-construction-project">Main</Link></li>
+          <li><Link to="/React-construction-project/gallery">Gallery</Link></li>
+          <li><Link to="/React-construction-project/projects">Projects</Link></li>
+          <li><Link to="/React-construction-project/about">About</Link></li>
+          <li><Link to="/React-construction-project/contact">Contact</Link></li>
         </ul>
       </div>
     </nav>
