@@ -1,11 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
-import Navbar from '../components/navbar';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import MissionStatement from '../components/MissionStatement';
 import Projects from '../components/Projects';
 import ContactForm from '../components/ContactForm';
-import Footer from '../components/Footer';
 import Gallery from '../components/Gallery';
 import ErrorPage from '../components/ErrorPage';
 import MoreInfo from '../components/MoreInfo';
